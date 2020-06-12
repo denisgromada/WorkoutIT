@@ -1,0 +1,80 @@
+@import "~bootstrap/scss/bootstrap"
+@import "./fonts"
+@import "./reset"
+
+$enable-responsive-font-sizes: true
+$text: #000000
+$accent1: #EE3D1B
+$accent2: #D52047
+
+body
+    font-family: 'Lato'
+    color: $text
+    width: 100%
+    max-width: 100%
+    +rfs(14)
+    overflow-x: hidden
+
+
+.header
+    min-height: 100vh
+    background: url('../img/bg.png') center top / cover
+    padding-top: 58px
+
+
+.menu
+
+    &__item
+        text-transform: uppercase
+        text-decoration: none!important
+        color: #ffffff
+        margin-right: 20px
+
+        &:nth-child(5)
+            margin-right: none
+
+
+        &:hover
+            font-weight: bold
+            color: #ffffff
+
+
+.button__ghost
+    width: 100px
+    height: 40px
+    background-color: transparent
+    border: 1px solid #FFFFFF
+    border-radius: 6px
+    color: #ffffff
+    +rfs(14)
+    text-transform: uppercase
+    margin-left: 20px
+    outline: none!important
+
+.offer__title
+    color: #ffff
+    +rfs(72)
+    font-weight: bold
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    margin: 140px 0px 40px 0px
+
+.offer__text
+    color: #ffffff
+    +rfs(24)
+    margin-top: 18px
+
+.button
+    border-radius: 6px
+    font-weight: 1,700
+    width: 160px
+    height: 50px
+    text-transform: uppercase
+
+    &__offer
+        text-transform: uppercase
+        background-color: #ffffff
+        color: $accent1
+        margin-top: 56px
+
+
