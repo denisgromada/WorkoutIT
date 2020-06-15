@@ -33,7 +33,7 @@ input
 .header
     min-height: 100vh
     background: url('../img/bg.png') center top / cover
-    padding-top: 58px
+    padding-top: 58px 0px 60px 0px
 
 
 .menu
@@ -97,7 +97,7 @@ input
 
     &__wrapper
         max-width: 445px
-        // margin-top: 60px
+
 
     &__text
         margin-top: 24px
@@ -258,8 +258,9 @@ input
 .iframe-container
     position: relative
     width: 100%
-    padding-bottom: 35%
-    height: 0
+    padding-bottom: 75%
+    height: 450px
+
 
     & iframe
         position: absolute
@@ -275,3 +276,23 @@ input
 
         &__item
             margin-bottom: 0px
+
+@media screen and (max-width:768px)
+
+    .menu
+
+        &__item
+            margin-right: 10px
+            +rfs(12)
+
+    .header__logo
+        margin-right: 10px
+
+@media screen and (max-width:576px)
+
+
+@media screen and (max-width:992px)
+
+
+
+
