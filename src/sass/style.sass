@@ -4,7 +4,7 @@
 
 $enable-responsive-font-sizes: true
 $text: #000000
-$accent1: #EE3D1B
+$accent1: #ED4C5C
 $accent2: #D52047
 
 body
@@ -18,6 +18,16 @@ body
 h2
     +rfs(36)
     font-weight: 1,700
+
+h3
+    +rfs(18px)
+    font-weight: 700
+
+input
+    border: 1px solid #333333
+    box-sizing: border-box
+    border-radius: 6px
+    padding: 21px 0px 21px 31px
 
 
 .header
@@ -76,9 +86,8 @@ h2
     text-transform: uppercase
 
     &__offer
-        text-transform: uppercase
         background-color: #ffffff
-        color: $accent1
+        color: $accent2
         margin-top: 56px
 
 // Screen2
@@ -95,11 +104,166 @@ h2
 
 
     &__link
-        color: $accent1
+        color: $accent2
 
 .link-wrapper
     margin-top: 10px
 
 .video
     border-radius: 15px
+
+// Screen3
+
+.img__wrapper
+    position: relative
+
+
+
+.features
+    background-color: #FAFAFA
+    padding: 63px 0px 124px 0px
+
+    &__item
+
+
+        &-img
+
+        &-title
+            margin-bottom: 20px
+
+        &-text
+            +rfs(12)
+            margin-bottom: 30px
+
+        &-link
+            color: $accent2
+
+
+
+    &__block
+        background-color: #ffffff
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1)
+        border-radius: 8px
+        width: 290px
+        height: 200px
+        padding: 33px 32px 25px 32px
+        margin-left: auto
+        margin-right: auto
+        left: 0
+        right: 0
+        text-align: center
+        position: absolute
+        bottom: -100px
+
+
+
+
+.title-wrapper
+    margin-bottom: 63px
+
+
+// Screen4
+
+.technology
+    padding: 63px 0px 105px 0px
+
+
+    &__item
+        max-width: 255px
+
+        &-img
+            margin-bottom: 5px
+
+
+        &-title
+            margin-bottom: 10px
+
+        &-text
+
+
+//Screen5
+
+.money
+    padding: 95px 0px 95px
+    background: $accent1
+    color: #ffff
+
+
+    &__text
+        margin-top: 45px
+
+
+
+
+.title__wrapper
+   max-width: 445px
+   margin-top: 45px
+
+
+.icon-wrapper
+    margin-top: 40px
+
+
+// Screen6
+
+.contact
+    padding: 117px 0px 78px
+
+    &-title-wrapper
+        max-width: 445px
+
+    &__title
+        margin-bottom: 60px
+
+    &__text
+        max-width: 435px
+
+.form
+    &__up
+        margin-bottom: 24px
+
+    &__name
+        width: 47%
+        height: 60px
+
+        &-fs
+            margin-right: 24px
+
+    &__phone, &__service
+        width: 100%
+        height: 60px
+
+    &__phone
+        margin-bottom: 24px
+
+.button__cta
+    background: #ED4C5C
+    border: 1.5px solid #ED4C5C
+    box-sizing: border-box
+    border-radius: 6px
+    max-width: 160px
+    height: 50px
+
+.button__contact-wrapper
+    margin-top: 27px
+
+
+
+
+// Screen7
+
+.footer
+    padding: 94px 0px
+
+    &__title
+        margin-bottom: 36px
+
+    &__bottom
+        margin-top: 94px
+
+
+
+@media screen and (max-width:768px)
+
+
 
